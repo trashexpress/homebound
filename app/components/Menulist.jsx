@@ -20,12 +20,9 @@ const Menulist = () => {
       className="flex flex-col gap-10 mt-8 mx-auto px-4"
     >
       <h1 className={`${montBold} font-bold text-4xl text-center`}>MENU</h1>
-      <Menu />
-      <Menu />
-
-      <Menu />
-
-      <Menu />
+      <Menu foodimage={"/food/burger.jpg"} description="Cheese Burger" />
+      <Menu foodimage={"/food/garlicshrimp.jpg"} description="Garlic Shrimp" />
+      <Menu foodimage={"/food/bruschetta.jpg"} description="Bruschetta" />
     </div>
   );
 };

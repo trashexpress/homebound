@@ -12,19 +12,14 @@ const montRegular = Montserrat({
   subsets: ["latin"],
 });
 
-const Menu = () => {
+const Menu = ({ foodimage, description }) => {
   return (
     <div className="flex">
       <div>
-        <Image
-          src={"/food/garlicshrimp.png"}
-          width={100}
-          height={100}
-          alt="garlicshrimp"
-        />
+        <Image src={foodimage} width={100} height={100} alt="garlicshrimp" />
       </div>
-      <div>
-        <h1>Garlic Shrimp</h1>
+      <div className="pl-4">
+        <h1 className={`${montRegular} uppercase font-bold`}>{description}</h1>
       </div>
     </div>
   );
